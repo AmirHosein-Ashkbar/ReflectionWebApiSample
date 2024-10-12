@@ -1,0 +1,6 @@
+@ReflectionWebApiSample_HostAddress = http://localhost:5147
+
+GET {{ReflectionWebApiSample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
