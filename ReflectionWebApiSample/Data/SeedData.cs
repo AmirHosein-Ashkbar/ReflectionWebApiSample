@@ -12,12 +12,12 @@ public static class SeedData
         if (!context.Products.Any())
         {
             context.Products.AddRange(
-                new Product { Id = 1, Name = "Laptop", Price = 1500, Description = "Gaming Laptop", IsAvailable = true },
-                new Product { Id = 2, Name = "Smartphone", Price = 800, Description = "Latest model", IsAvailable = true },
-                new Product { Id = 3, Name = "item3", Price = 800, Description = "Latest model", IsAvailable = false },
-                new Product { Id = 4, Name = "item4", Price = 800, Description = "Latest model", IsAvailable = false },
-                new Product { Id = 5, Name = "SmartPhone", Price = 800, Description = "Latest model", IsAvailable = true },
-                new Product { Id = 6, Name = "Laptop", Price = 800, Description = "Latest model", IsAvailable = false }
+                new Product { Name = "Laptop", Price = 1500, Description = "Gaming Laptop", IsAvailable = true , Category= Category.Electronics},
+                new Product { Name = "Smartphone", Price = 800, Description = "Latest model", IsAvailable = true, Category = Category.Electronics },
+                new Product { Name = "Milk", Price = 2, Description = "somethings!!!", IsAvailable = false , Category = Category.Groceries},
+                new Product { Name = "T-Shirt", Price = 15, Description = "Nike T-Shirt", IsAvailable = false , Category = Category.Clothing },
+                new Product { Name = "SmartPhone2", Price = 800, Description = "Latest model", IsAvailable = true, Category = Category.Electronics },
+                new Product { Name = "Laptop", Price = 800, Description = "Latest model", IsAvailable = false , Category = Category.Electronics }
             );
 
             context.SaveChanges();

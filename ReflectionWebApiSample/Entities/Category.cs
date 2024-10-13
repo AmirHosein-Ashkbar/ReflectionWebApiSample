@@ -3,5 +3,7 @@
 public enum Category
 {
     Groceries,
-
+    Electronics,
+    Health,
+    Clothing
 }
