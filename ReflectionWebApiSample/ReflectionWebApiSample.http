@@ -4,3 +4,10 @@ GET {{ReflectionWebApiSample_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+###
+GET https://localhost:7159/api/Products/getall?fields=Name%2CPrice%2CId&filters=Name%3ALaptop
+Accept: application/json
+###
+GET https://localhost:7159/api/Products/getall?fields=Name%2CId%2CPrice&filters=Name%3ALaptop%2CIsAvailable%3Atrue
+Accept: application/json
