@@ -37,7 +37,7 @@ public class ReflectionHelper
                 var filterValue = selectedFilter[1];
                 var value = GetPropertyValue(item, field);
 
-                if (value.ToString().ToUpper() != filterValue.ToString().ToUpper())
+                if (!value.ToString().ToUpper().Contains(filterValue.ToString().ToUpper()))
                 {
                     results.Remove(item);
                 }
